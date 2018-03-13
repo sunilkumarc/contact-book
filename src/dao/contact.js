@@ -15,6 +15,7 @@ const getOneContact = (email) => {
 }
 
 const getContactsWithName = (name, perPage, page) => {
+    console.log('HERE', name, perPage, page);
     return new Promise((resolve, reject) => {
         Contact.find({name: new RegExp('^' + name, 'i')})
         .skip((perPage * page) - perPage)

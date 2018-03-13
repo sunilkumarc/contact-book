@@ -4,6 +4,7 @@ const ContactsController = require('./controllers/contact');
 const response = require('./util/response');
 
 const server = express();
+var app;
 
 // DB Connection
 require('./config/db');
@@ -18,9 +19,18 @@ server.get('/', function(req, res){
 ContactsController.set(server);
 
 const port = Number(process.env.PORT || 8000)
-server.listen(port, err => {
-    if (err)
-        console.log(err);
-    else
-        console.log('Contact book application started ...');
-});
+
+const startServer = (port) => {
+    app = server.listen(port);
+}
+
+const stopServer = () => {
+    app.close();
+}
+
+startServer(port);
+
+module.exports = {
+    startServer: startServer,
+    stopServer: stopServer
+}
