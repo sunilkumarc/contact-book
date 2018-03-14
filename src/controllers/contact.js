@@ -19,7 +19,7 @@ module.exports.set = (app) => {
                 return res.status(400).send(err);
             });
         } else if (req.query.name) {
-            var perPage = 10;
+            var perPage = process.env.PER_PAGE || 10;
             var page = req.query.page || 1;
 
             contactsDao.getContactsWithName(req.query.name, perPage, page).then((contacts) => {
