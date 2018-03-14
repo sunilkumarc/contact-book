@@ -29,7 +29,7 @@ URL
 
 HEADERS
 	Authorization: Basic YWRtaW46c3VwZXJzZWNyZXQ=
-    Content-Type: application/json
+	Content-Type: application/json
 
 BODY
 	{
@@ -45,7 +45,7 @@ URL
 
 HEADERS
 	Authorization: Basic YWRtaW46c3VwZXJzZWNyZXQ=
-    Content-Type: application/json
+	Content-Type: application/json
 ```
 
 ### Get a contact by email
@@ -55,7 +55,7 @@ URL
 
 HEADERS
 	Authorization: Basic YWRtaW46c3VwZXJzZWNyZXQ=
-    Content-Type: application/json
+	Content-Type: application/json
 ```
 
 ### Get all contacts starting with a string (return at most 10 values, default page = 1)
@@ -65,7 +65,7 @@ URL
 
 HEADERS
 	Authorization: Basic YWRtaW46c3VwZXJzZWNyZXQ=
-    Content-Type: application/json
+	Content-Type: application/json
 ```
 
 ### Get all contacts starting with a string (page = 2, page req param can be used to get paginated values)
@@ -75,5 +75,5 @@ URL
 
 HEADERS
 	Authorization: Basic YWRtaW46c3VwZXJzZWNyZXQ=
-    Content-Type: application/json
+	Content-Type: application/json
 ```
