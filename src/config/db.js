@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const db_url = process.env.MONGO_URI || 'mongodb://localhost:27017/plivo-contact-book';
+const db_url = process.env.MONGO_URI || 'mongodb://plivo-test-user:testpass@ds113019.mlab.com:13019/contacts-book';
 
 console.log('HERE', db_url);
 mongoose.connect(db_url, function(err, conn) {
