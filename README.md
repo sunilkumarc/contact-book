@@ -1,5 +1,11 @@
 # Contact Book
 
+### Technologies Used
+- Nodejs
+- Mongodb (as a service by mLab)
+- Hosted on Heroku
+
+
 Basic authentication has been enabled on the backend. Right now below username and password should be encoded in base64 format and sent in every request.
 ````
 username: admin
@@ -30,12 +36,12 @@ URL
 HEADERS
 	Authorization: Basic YWRtaW46c3VwZXJzZWNyZXQ=
 	Content-Type: application/json
-	
+
 BODY
-	{
-		"email": "user1@gmail.com",
-		"name": "user1 updated"
-	}
+    {
+        "email": "user1@gmail.com",
+        "name": "user1 updated"
+    }
 ```
 
 ### Delete a contact
