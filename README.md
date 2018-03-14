@@ -30,7 +30,7 @@ URL
 HEADERS
 	Authorization: Basic YWRtaW46c3VwZXJzZWNyZXQ=
 	Content-Type: application/json
-
+	
 BODY
 	{
 		"email": "user1@gmail.com",
