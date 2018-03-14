@@ -21,7 +21,7 @@ module.exports.set = (app) => {
         } else if (req.query.name) {
             var perPage = process.env.PER_PAGE || 10;
             var page = req.query.page || 1;
-
+            
             contactsDao.getContactsWithName(req.query.name, perPage, page).then((contacts) => {
                 if (contacts.length > 0) {
                     return res.status(200).send(contacts);
